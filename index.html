@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Ui</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="h-screen">
+    <div class="grid h-full grid-cols-[6%_25%_1fr_25%]">
+        <aside class="flex flex-col gap-8 items-center shadow-[0_0_24px_rgb(0,0,0,0.1)] p-4">
+            <img src="./assets/Logo.png" class="w-[56px]">
+            <img src="./assets/icon1.svg" class="w-[28px]">
+            <img src="./assets/icon2.svg" class="w-[28px]">
+            <img src="./assets/icon3.svg" class="w-[28px]">
+            <img src="./assets/icon4.svg" class="w-[28px]">
+            <img src="./assets/icon5.svg" class="w-[28px]">            
+        </aside>
+        <aside class="border-r-2 ">
+            <div class="flex justify-between p-6 border-b-2">
+                <div class="flex gap-4 items-center">
+                    <p class="text-[20px]">Messages</p>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <div class="bg-[#EDF2F7] px-2 rounded-lg">
+                        <p class="text-[#615EF0] font-bold">12</p>
+                    </div>
+                </div>
+                <div class="bg-[#615EF0] px-3 py-1.5 rounded-full text-white">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+            <div class="flex flex-col overflow-y-scroll h-[510px]">
+                <div class="px-8 py-4">
+                    <input class="w-full bg-[#eeeeee] px-4 py-2 rounded-lg" placeholder="Search Messages">
+                </div>
+                <div class="flex flex-col px-4 gap-2">
+                    <div class="flex justify-between p-4">
+                        <div class="flex gap-4">
+                            <img src="./assets/person1.png" class="w-[20%] h-[50%]">
+                            <div class="flex flex-col gap-2">
+                                <div class="">
+                                    <p class="font-semibold text-[18px]">Elmer Laverty</p>
+                                    <p>Haha oh man 🔥</p>
+                                </div>
+                                <div class="flex gap-4">
+                                    <div class="py-1 px-3 bg-[#FEEBC8] font-semibold text-[#DD6B20] rounded-full h-fit">
+                                        Question
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>12m</p>
+                    </div>
+                    <div class="flex justify-between p-4 bg-[#A4A2FF]/10 rounded-lg">
+                        <div class="flex gap-4">
+                            <img src="./assets/person2.png" class="w-[20%] h-[50%]">
+                            <div class="flex flex-col gap-2">
+                                <div class="">
+                                    <p class="font-semibold text-[18px]">Florencio Dorrance</p>
+                                    <p>woohoooo</p>
+                                </div>
+                                <div class="flex gap-4">
+                                    <div class="py-1 px-3 text-[#718096] border-2 font-semibold rounded-full h-fit">
+                                        Some content
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>24m</p>
+                    </div>
+                    <div class="flex justify-between p-4">
+                        <div class="flex gap-4">
+                            <img src="./assets/person3.png" class="w-[20%] h-[50%]">
+                            <div class="flex flex-col gap-2">
+                                <div class="">
+                                    <p class="font-semibold text-[18px]">Lavern Laboy</p>
+                                    <p>Haha that's terrifying 😂</p>
+                                </div>
+                                <div class="flex gap-4">
+                                    <div class="py-1 px-3 bg-[#C6F6D5] text-[#38A169] font-semibold rounded-full h-fit">
+                                        Bug
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>1h</p>
+                    </div>
+                    <div class="flex justify-between p-4">
+                        <div class="flex gap-4">
+                            <img src="./assets/person4.png" class="w-[20%] h-[50%]">
+                            <div class="flex flex-col gap-2">
+                                <div class="">
+                                    <p class="font-semibold text-[18px]">Alfonzo Schuessler</p>
+                                    <p>perfect!</p>
+                                </div>
+                                <div class="flex gap-4">
+                                    <div class="py-1 px-3 bg-[#FEEBC8] font-semibold text-[#DD6B20] rounded-full h-fit">
+                                        Follow up
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>2d</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main class="flex flex-col border-r-2">
+            <div class="flex p-6 justify-between border-b-2">
+                <div class="flex gap-4">
+                    <img src="./assets/person2.png" class="w-[15%]">
+                    <div class="flex flex-col">
+                        <p class="font-semibold text-[20px]">Florencio Dorrance</p>
+                        <div class="flex items-center gap-2">
+                            <div class="bg-[#68D391] rounded-full w-[12px] h-[12px]">
+                            <pre> </pre>
+                            </div>
+                            <div class="text-[#7B7B7B]">
+                                online
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="flex w-fit bg-[#5F5BF4]/10 rounded-lg text-[16px] font-semibold gap-4 py-2 px-6 text-[#615EF0] items-center"><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+            <div class="flex flex-col gap-4 p-4">
+                <div class="flex gap-4">
+                    <img src="./assets/person2.png" class="w-[8%] h-[55%]">
+                    <div class="flex flex-col gap-2">
+                        <div class="px-4 py-2 bg-[#F1F1F1] text-[16px] font-medium rounded-lg w-fit">
+                            <p>omg, this is amazing</p>
+                        </div>
+                        <div class="px-4 py-2 bg-[#F1F1F1] text-[16px] font-medium rounded-lg w-fit">
+                            <p>perfect! ✅</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-4 justify-end">
+                    <div class="flex flex-col gap-2">
+                        <div class="px-4 py-2 bg-[#615EF0] text-[16px] font-medium rounded-lg w-fit text-white">
+                            <p>How are you?</p>
+                        </div>
+                    </div>
+                    <img src="./assets/person2.png" class="w-[8%] h-[100%]">
+                </div>
+                <div class="flex gap-4">
+                    <img src="./assets/person2.png" class="w-[8%] h-[55%]">
+                    <div class="flex flex-col gap-2">
+                        <div class="px-4 py-2 bg-[#F1F1F1] text-[16px] font-medium rounded-lg w-fit">
+                            <p>just ideas for next time</p>
+                        </div>
+                        <div class="px-4 py-2 bg-[#F1F1F1] text-[16px] font-medium rounded-lg w-fit">
+                            <p>I'll be there in 2 mins ⏰</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-4 justify-end">
+                    <div class="flex flex-col gap-2  items-end">
+                        
+                        <div class="px-4 py-2 bg-[#F1F1F1] text-[16px] font-medium rounded-lg w-fit">
+                            <p>Haha oh man</p>
+                        </div>
+                        <div class="px-4 py-2 bg-[#F1F1F1] text-[16px] font-medium rounded-lg w-fit">
+                            <p>Haha that's terrifying 😂</p>
+                        </div>
+                    </div>
+                    <img src="./assets/person2.png" class="w-[8%] h-[35%]">
+                </div>
+                <div class="flex p-4 justify-between items-center gap-4">
+                    <div class="text-black text-lg">
+                        <i class="fa-solid fa-paperclip"></i>
+                    </div>
+                    <div class="flex w-full px-4 p-3 border-2 rounded-xl font-medium border-[#E2E8F0] text-[#7B7B7B] justify-between items-center">
+                        <p>Type a message</p>
+                        <i class="fa-solid fa-paper-plane text-[#615EF0] text-lg"></i>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside class="flex flex-col gap-4">
+            <div class="flex p-6 items-center justify-between border-b-2">
+                <p class="font-semibold text-[20px]">Directory</p>
+                <div class="px-4 py-1.5 rounded-full bg-[#5F5BF4]/10 text-[#5F5BF4]">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+            <div class="flex flex-col px-6 gap-6">
+                <div class="flex items-center gap-4">
+                    <p class="font-medium text-[18px]">Team Members</p>
+                    <div class="px-3 py-1 rounded-full bg-[#5F5BF4]/10 font-bold text-[18px] text-[#5F5BF4]">
+                        <p>6</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <img src="./assets/person1.png" alt="person1" class="w-[20%]">
+                    <div class="flex flex-col">
+                        <p class="font-semibold">Florencio Dorrance</p>
+                        <p class="font-medium text-gray-500">Market Manager</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <img src="./assets/person2.png" alt="person1" class="w-[20%]">
+                    <div class="flex flex-col">
+                        <p class="font-semibold">Benny Spanbauer</p>
+                        <p class="font-medium text-gray-500">Area Sales Manager</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <img src="./assets/person3.png" alt="person1" class="w-[20%]">
+                    <div class="flex flex-col">
+                        <p class="font-semibold">Jamel Eusebio</p>
+                        <p class="font-medium text-gray-500">Administrator</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <img src="./assets/person4.png" alt="person1" class="w-[20%]">
+                    <div class="flex flex-col">
+                        <p class="font-semibold">Lavern Laboy</p>
+                        <p class="font-medium text-gray-500">Account Executive</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <img src="./assets/person1.png" alt="person1" class="w-[25%]">
+                    <div class="flex flex-col">
+                        <p class="font-semibold">Florencio Dorrance</p>
+                        <p class="font-medium text-gray-500">Market Development Manager</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
